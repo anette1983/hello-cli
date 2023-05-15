@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// npm i -g .
+// hello -n me -s orange
 const logger = require("./module");
 
 const yargs = require("yargs");
