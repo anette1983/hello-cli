@@ -2,6 +2,18 @@ const { Command } = require("commander");
 const program = new Command();
 const contacts = require("./contacts");
 
+// # Get and display the entire list of contacts in the form of a table (console.table)
+// node index.js --action list
+
+// # Get contact by id
+// node index.js --action get --id 05olLMgyVQdWRwgKfg5J6
+
+// # Add the contact
+// node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-22
+
+// # Delete the contact
+// node index.js --action remove --id qdggE76Jtbfd9eWJHrssH
+
 program
   .option("-a, --action <type>", "choose action")
   .option("-i, --id <type>", "user id")
